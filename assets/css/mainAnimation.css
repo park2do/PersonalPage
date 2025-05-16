@@ -1,0 +1,26 @@
+/*datetime Animation*/
+.highlight {
+    font-weight: bold;
+    animation: fadeInOut 1s ease;
+}
+
+@keyframes fadeInOut {
+    0%   { opacity: 0.2; transform: scale(1); }
+    30%  { opacity: 1; transform: scale(1.2); }
+    70%  { opacity: 1; transform: scale(1.1); }
+    100% { opacity: 1; transform: scale(1); }
+    }
+
+/*Register Animation*/
+
+.slide-fade {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.85s ease, opacity 0.5s ease;
+}
+
+.slide-fade.show {
+    max-height: 1000px; /* 충분히 큰 값으로 설정 */
+    opacity: 1;
+}
